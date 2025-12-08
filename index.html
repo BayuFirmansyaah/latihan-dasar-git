@@ -3,25 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan Navigasi</title>
+    <title>Latihan Table</title>
 </head>
 <body>
+
+    <h1>Basic Tables</h1>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ubay</td>
+            <td>Surabaya, Indonesia</td>
+            <td>ubay@gmail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ahmad</td>
+            <td>Bali, Indonesia</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Doddy</td>
+            <td>Bandung, Indonesia</td>
+            <td>Doddy@gmail.com</td>
+        </tr>
+    </table>
+
+    <br>
+    <h1>Merging Table Row and Column</h1>
+    <table border="1">
+        <tr>
+            <td width="100px" rowspan="2">Nama</td>
+            <td width="100px" rowspan="2">Nim</td>
+            <td width="200px" colspan="2">Kontak</td>
+        </tr>
+        <tr>
+            <td>Nomor HP</td>
+            <td>Alamat Email</td>
+        </tr>
+        <tr>
+            <td>Bayu</td>
+            <td>001</td>
+            <td>081xxxx</td>
+            <td>bayu@gmail.com</td>
+        </tr>
+    </table>
+
+    <br>
+    <h1>Menggabungkan antara Row Span dan Col Span</h1>
+    <table border="1">
+        <tr>
+            <td width="100px">1</td>
+            <td width="100px">2</td>
+            <td width="100px">3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td colspan="2" rowspan="2">6</td>
+        </tr>
+        <tr>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
     
-    <a href="./about.html">
-        Klik disini untuk berpindah ke halaman about
-    </a>
-
-    <br>
-
-    <a href="https://www.dicoding.com/" target="_blank">
-        Klik disini untuk berpindah ke dicoding
-    </a>
-
-    <br>
-
-    <a href="./pages/ferari.html" target="_self">
-       klik untuk mengarahkan ke halaman detail ferari
-    </a>
-
 </body>
 </html>

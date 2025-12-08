@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan Table</title>
+    <style>
+        table,
+        tr,
+        td,
+        th{
+            border-collapse: collapse;
+        }   
+    </style>
 </head>
 <body>
 
+    <!-- basic tables -->
     <h1>Basic Tables</h1>
     <table border="1">
         <tr>
             <th>No</th>
-            <th>Nama</th>
+            <td>Nama</td>
             <th>Alamat</th>
             <th>Email</th>
         </tr>
         <tr>
-            <td>1</td>
+            <td> 1</td>
             <td>Ubay</td>
             <td>Surabaya, Indonesia</td>
             <td>ubay@gmail.com</td>
@@ -25,6 +34,7 @@
             <td>2</td>
             <td>Ahmad</td>
             <td>Bali, Indonesia</td>
+            <td>ahmad@gmail.com</td>
         </tr>
         <tr>
             <td>3</td>
@@ -33,7 +43,9 @@
             <td>Doddy@gmail.com</td>
         </tr>
     </table>
+    <!-- end basic tables -->
 
+    <!-- tables row and column -->
     <br>
     <h1>Merging Table Row and Column</h1>
     <table border="1">
@@ -53,28 +65,33 @@
             <td>bayu@gmail.com</td>
         </tr>
     </table>
+    <!-- end tables row and column -->
 
+    <!-- merge rowspan and colspan -->
     <br>
     <h1>Menggabungkan antara Row Span dan Col Span</h1>
     <table border="1">
         <tr>
-            <td width="100px">1</td>
-            <td width="100px">2</td>
-            <td width="100px">3</td>
+            <td width="100px" align="center">1</td>
+            <td width="100px" align="center">2</td>
+            <td width="100px" align="center">3</td>
         </tr>
         <tr>
-            <td>4</td>
-            <td colspan="2" rowspan="2">6</td>
+            <td align="center">4</td>
+            <td colspan="2" rowspan="2" align="center">
+                6
+            </td>
         </tr>
         <tr>
-            <td>5</td>
+            <td align="center">5</td>
         </tr>
         <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
+            <td align="center">7</td>
+            <td align="center">8</td>
+            <td align="center">9</td>
         </tr>
     </table>
+    <!-- end merge colspan and rowspan -->
     
 </body>
 </html>
